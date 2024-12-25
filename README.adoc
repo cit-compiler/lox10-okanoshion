@@ -173,7 +173,10 @@ java com.craftinginterpreters.lox.Lox <プログラム>
 
 [source,console]
 ----
-ここに、Loxを実行したときのコマンドライン、その動作結果をテキストで貼り付ける。
+Exception in thread "main" java.lang.ClassCastException: class java.util.stream.ReferencePipeline$Head cannot be cast to class java.util.List (java.util.stream.ReferencePipeline$Head and java.util.List are in module java.base of loader 'bootstrap')
+        at com.craftinginterpreters.lox.Lox.run(Lox.java:47)
+        at com.craftinginterpreters.lox.Lox.runPrompt(Lox.java:40)
+        at com.craftinginterpreters.lox.Lox.main(Lox.java:21)
 ----
 
 作成できたら、一度「lox01」をコミットしなさい。
